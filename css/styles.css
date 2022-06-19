@@ -1,0 +1,24 @@
+h1 {
+    color: white;
+    background-color: green;
+
+}
+
+.tree-background {
+    background-image: url(https://www.sciencenewsforstudents.org/wp-content/uploads/2020/04/1030_LL_trees-1028x579.png);
+    color: white;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 15px 15px 0px #000000;
+}
+
+.drop-shdw {
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.txt-shdw {
+    text-align: center;
+    font-size: 30pt;
+    text-shadow: rgba(125, 163, 120, 1.0) 0px 2px 5px;
+}
+
