@@ -1,0 +1,18 @@
+:root {
+    --color-1: #004C50; 
+    --color-2: #00939C ; 
+    --color-3: #10ABB4; 
+    --color-4: #9C3E00; 
+    --color-5: #502000;  
+}
+
+a {
+   
+}
+
+.link-button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #00939C ;
+    color: #9C3E00;
+}

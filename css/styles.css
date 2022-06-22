@@ -1,6 +1,29 @@
+:root {
+    --color-1: #012030;
+    --color-2: #13678A;
+    --color-3: #45C4B0;
+    --color-4: #9AEBA3;
+    --color-5: #DAFDBA;
+}
+
+
+a {
+    color: var(--color-5);
+}
+
+
+
 h1 {
-    color: white;
-    background-color: green;
+    color: var(--color-1);
+    background-color: var(--color-5);
+
+}
+
+div {
+    padding: 30px;
+    margin-bottom: 15px;
+
+
 
 }
 
@@ -22,3 +45,166 @@ h1 {
     text-shadow: rgba(125, 163, 120, 1.0) 0px 2px 5px;
 }
 
+/* Section Background Color */
+body {
+    background-color:#012030;
+}
+
+.monkey {
+background-color: white;
+color: rgb(255, 0, 0);
+border: 4px solid black;
+border-radius: 15%;
+}
+
+.hippo-face {
+background-color: rgb(60, 139, 208);
+}
+
+.hippo-face:hover {
+    background-color: rgb(0, 42, 255);
+    transition: 5s;
+    border
+}
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+/* W3 SCHOOLS POPUP */
+
+  /* Add animation (fade in the popup) */
+/* Popup container
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  /* .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  } */
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  /* .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  } */
+  
+  /* Add animation (fade in the popup) */
+  /* @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  } */
+  
+  /* @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  } */
+
+  .overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0, 0, 0, 0.85);
+    background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9;
+    z-index:9999;
+    color:white;
+}
+
+/* for testing purposes */
+
+
+.box {
+    padding:20px;
+    border:1px solid #000;
+    position:relative;
+}
+
+.small {
+    width:200px;
+    height:200px;
+}
+
+a.toggle {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color:black;
+    color:white;
+    padding:10px;
+    display:block;
+    text-decoration:none;
+    z-index:99999;
+    outline:none;
+}
+
+a.toggle:hover {
+    background-color:#444;
+}
+
+a.toggle:active {
+    background-color:#222;
+}
+
+.overlay {
+    text-align: center;
+}
+ 
+.overlay:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+
+.txt {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 15px;
+    position:relative;
+    font-weight:bold;
+}
