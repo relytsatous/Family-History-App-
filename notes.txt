@@ -1,10 +1,16 @@
 Notes:
 
     coding tips:
+        - shift + cmmnd + right/left = select everything until the end of the line in that direction
         - shift + alt + down arrow = copy the thing
          you've selected down a line
         - shift + tab (un-indents)
+        - shift + tab (un-indents)
 
-        
+        -dbl click inside text to select whole word
+
+        cmmnd = end of line
+
+      fn + f2 = find and replace instantly  
 
 

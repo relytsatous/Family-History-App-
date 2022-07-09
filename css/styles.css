@@ -1,38 +1,211 @@
 :root {
+/* Main Color Scheme */
     --color-1: #012030;
-    --color-2: #13678A;
-    --color-3: #45C4B0;
-    --color-4: #9AEBA3;
-    --color-5: #DAFDBA;
+    --color-2: #4d3d12; 
+    --color-3: whitesmoke;
+    --color-4: #b5b3ac;
+   
+  
+    /* Collapsible Button Hover */
+    --color-6: #15455d;
 }
 
+.border {
+  border: 1px solid var(--color-3);
+  background-color: var( --color-4);
+}
+
+body {
+  background-color: var(--color-1);
+  color: #fff;
+}
 
 a {
-    color: var(--color-5);
+    color: var(--color-3);
 }
 
 
+h1 { 
+  margin-top: 0px;
+  background-color: var( --color-1);
+  font-size: 60px;
+  color: var(--color-2);
+  text-align: center;
 
-h1 {
-    color: var(--color-3);
-    background-color: var(--color-5);
+}
 
+h2 {
+  text-align: center;
+  margin: 0px
+}
+
+h3 {
+  color: var(--color-3); 
+}
+
+h4 {
+  color: white
 }
 
 div {
-    padding: 30px;
-    margin-bottom: 15px;
+    padding: 15px;
+    margin-bottom: 5px;
+    /* box-shadow: 5px 10px #b5b3ac;
+    border: 1px solid;  */
+}
+/* 
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  border-radius: 10px;
 }
 
-p.c {
-    font-style: oblique;
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
 }
+
+blockquote p {
+  display: inline;
+} */
+
+
+
+/*button {
+  color: #fff;
+  font-weight: 500;
+  border-radius: 3em;
+  padding: 0.8em 2em;
+  transition: all .2s ease-out;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  background-color: rgba(255,255,255,0);
+  border: solid 2px white;
+}
+
+button:hover {
+  background-color: #9AEBA3;
+  color: #000;
+}
+*/
+
+.custom-button {
+  /* Custom Button Class goes here */
+}
+
+
+element.style {
+}
+@media (max-width: 767px)
+blockquote {
+    border-top: 2px solid #00CC8F;
+    border-bottom: 2px solid #00CC8F;
+    border-left: none;
+    margin: 1.5em 0;
+    padding: 1.5em 1em;
+}
+
+@media (max-width: 980px)
+blockquote {
+    font-size: 2.1em;
+    margin: 1.1em -2em;
+}
+blockquote {
+    border-left: 3px solid #fff;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 2.25em;
+    font-style: italic;
+    line-height: 1.8em;
+    margin: 1.1em -4em;
+    padding: 1em 2em;
+    position: relative;
+    transition: 0.2s border ease-in-out;
+    z-index: 0;
+}
+blockquote {
+    margin: 0 0 1rem;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+/* Blockquote styling */
+/* From: https://codepen.io/johnfinkdesign/pen/gRvEGq */
+
+@media (max-width: 767px) {
+blockquote:before {
+    left: 50%;
+    top: 0;
+    height: 4px;
+    margin-top: -3px;
+    margin-left: -1em;
+    width: 2em;}
+blockquote:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -4px;
+    height: 2em;
+    background-color: var(--color-1);
+    width: 5px;
+    margin-top: -1em;
+}
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 767px) {
+blockquote:after {
+    font-size: 0.75em;
+    left: 50%;
+    top: 0;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+}
+blockquote:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -0.5em;
+    color: #fff;
+    font-family: "Ionicons";
+    font-style: normal;
+    line-height: 1em;
+    text-align: center;
+    text-indent: -2px;
+    width: 1em;
+    margin-top: -0.5em;
+    transition: 0.2s all ease-in-out, 0.4s transform ease-in-out;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+}
+
+
+
+/* Back to our stuff */
 
 .tree-background {
     background-image: url(https://www.sciencenewsforstudents.org/wp-content/uploads/2020/04/1030_LL_trees-1028x579.png);
-    color: white;
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-    box-shadow: 5px 15px 15px 0px #000000;
+    color: white; 
 }
 
 .drop-shdw {
@@ -42,25 +215,135 @@ p.c {
 
 .txt-shdw {
     text-align: center;
-    font-size: 30pt;
-    text-shadow: rgba(125, 163, 120, 1.0) 0px 2px 5px;
+    font-size: 30px;
+    text-shadow: var( --color-3)) 0px 2px 5px;
+    margin: 0px;
 }
 
-/* Section Background Color */
-body {
-    background-color:#012030;
-    color: #fff;
+{box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+
+/* Month Header*/
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: var( --color-2);
+  text-align: center;
 }
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: var(--color-2);
+  color: white !important
+}
+
+
+
+/* Section Background Color */
+
 
 .monkey {
 background-color: white;
 color: var(--color-3);
 }
 
-.hippo-face {
-background-color: rgb(60, 139, 208);
+
+.Jesus {
+  color: var(--color-4);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.Jesus h2 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.collapsible {
+  background-color: transparent;
+  color: var(--color-4);
+  cursor:crosshair;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align:center;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: var( --color-4);
+  color: var( --color-2);
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.hippo-face {
+  background-color: rgb(60, 139, 208);
+  }
 
 
 .hippo-face:hover {
@@ -76,17 +359,48 @@ background-color: rgb(60, 139, 208);
     cursor: pointer;
   }
   
+  .nav-btn {
+    margin-bottom: 0px;
+    width: 100%;
+    height: 60px;
+    background-color:silver;
+    background-image:
+    radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+    radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
+    background-size: 100px 50px;
+  }
+
+
+.active,
+.nav-btn:hover {
+  background-color: var( --color-4);
+  color: var( --color-2);
+}
+
+  /* Horizontal nav bar */
+.nav-link {
+  display: inline; 
+  padding: 12px; 
+ 
+}
+
+li a:hover {
+  background-color: var( --color-2);
+}
   /* The actual popup (appears on top) */
   .popup .popuptext {
     visibility: hidden;
-    width: 160px;
+    width: 145px;
     background-color: rgb(--color-1);
     color: #fff;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 16px;
     padding: 8px 0;
     position: absolute;
-    z-index: 1;
+    z-index: 4;
     bottom: 125%;
     left: 50%;
     margin-left: -80px;
@@ -94,9 +408,70 @@ background-color: rgb(60, 139, 208);
   
   /* Toggle this class when clicking on the popup container (hide and show the popup) */
   .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
+    visibility:hidden
+    webkit-animation: fadeIn 1s;
     animation: fadeIn 1s
+  }
+
+
+  Medical Terms table
+
+  #customers {
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: gold}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var( --color-2);
+    color: white;
+  } */
+
+  /* Collapsible table */
+  /* table { 
+    width: 750px; 
+    border-collapse: collapse; 
+    margin:50px auto;
+    }
+  
+  th { 
+    background: #3498db; 
+    color: white; 
+    font-weight: bold; 
+    }
+  
+  td, th { 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+    font-size: 18px;
+    }
+  
+  .labels tr td {
+    background-color: #2cc16a;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .label tr td label {
+    display: block;
+  }
+  
+  
+  [data-toggle="toggle"] {
+    display: none;
   }
   
 /* W3 SCHOOLS POPUP */
@@ -142,6 +517,26 @@ background-color: rgb(60, 139, 208);
     from {opacity: 0;}
     to {opacity:1 ;}
   } */
+
+
+
+
+
+
+/* CollapsibleTable from Web Designer Wall */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .overlay {
     position:absolute;
@@ -210,3 +605,8 @@ a.toggle:active {
     position:relative;
     font-weight:bold;
 }
+
+/* <button onclick="helloThere()">Say Hello, Computer</button> --> 
+
+
+<button onmouseover="wuzzzup()">Don't touch the button</button> */ 
